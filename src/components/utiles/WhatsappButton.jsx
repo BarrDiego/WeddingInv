@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '/src/assets/styles/layouts.css'
+import '/src/assets/styles/layouts.css';
 
 const WhatsAppButton = () => {
   const [buttonDisabled, setButtonDisabled] = useState(false);
