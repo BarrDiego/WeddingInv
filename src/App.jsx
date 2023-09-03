@@ -6,26 +6,22 @@ import ConfirmacionButton from './components/utiles/ConfirmacionButton'
 
 
 
+
 function App() {
-  const styleGral = {
-      border: '1px solid'
-  }
+  const isOpen = true;
   return (
     <>
-      <div className="confirmacion-button">
-        <ConfirmacionButton />
-      </div>
       <div className="whatsapp-button">
         <WhatsAppButton />
       </div>
-      <div style={styleGral}>
+      <div className='style-gral'>
         <div>
           <LayoutPrl/>
         </div>
         <div>aqui transicion</div>
         <div>aqui info</div>
-        <div>aqui registro</div>
-        <div> aqui algo mas</div>
+        <ConfirmacionButton/>
+        <div>aqui algo mas</div>
       </div>
       
     </>

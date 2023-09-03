@@ -33,6 +33,16 @@
   }
 }
 
+body {
+  background-color: rgba(192, 192, 192, 0.5); /* Fondo gris semi-transparente para el cuerpo */
+}
+
+.style-gral{
+  border: 1px rgba(128,128,128,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Efecto de sombreado */
+  background-color: white; /* RGBA(Grises, Opacidad) */
+}
+
 .card {
   padding: 2em;
 }

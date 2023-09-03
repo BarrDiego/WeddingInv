@@ -1,7 +1,7 @@
 import React from 'react';
 import '/src/assets/styles/layouts.css'; 
 
-const ModalConfirmacion = ({ isOpen, onClose, onConfirm, selectedOption, onOptionChange }) => {
+const ModalConfirmacion = ({ isOpen, onClose, onConfirm, selectedOption, onOptionChange}) => {
     if (!isOpen) return null;
     return (
         <div className="modal-overlay">
@@ -13,7 +13,7 @@ const ModalConfirmacion = ({ isOpen, onClose, onConfirm, selectedOption, onOptio
               <option value="novio">Invitado del Novio</option>
               <option value="novia">Invitado de la Novia</option>
             </select>
-            <div className="confirmacion-button">
+            <div className="modal-buttons">
               <button onClick={onClose}>Cancelar</button>
               <button onClick={onConfirm} disabled={!selectedOption}>
                 Confirmar
