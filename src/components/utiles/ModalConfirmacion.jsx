@@ -1,7 +1,7 @@
 import React from 'react';
 import '/src/assets/styles/layouts.css'; 
 
-const ModalConfirmacion = ({ isOpen, onClose, onConfirm, selectedOption, onOptionChange}) => {
+const ModalConfirmacion = ({ isOpen, onClose, onConfirm, selectedOption, onOptionChange, specialMenu}) => {
     if (!isOpen) return null;
     return (
         <div className="modal-overlay">
@@ -13,9 +13,13 @@ const ModalConfirmacion = ({ isOpen, onClose, onConfirm, selectedOption, onOptio
               <option value="novio">Invitado del Novio</option>
               <option value="novia">Invitado de la Novia</option>
             </select>
+          <div className="checkbox">
+            <input type="checkbox" id="specialMenu" checked={specialMenu} />
+            <label htmlFor="specialMenu">Deseo incluir un menú especial para mí o acompañante</label>
+          </div>
             <div className="modal-buttons">
               <button onClick={onClose}>Cancelar</button>
-              <button onClick={onConfirm} disabled={!selectedOption}>
+              <button onClick={() => onConfirm(specialMenu)} disabled={!selectedOption}>
                 Confirmar
               </button>
             </div>

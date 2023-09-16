@@ -1,10 +1,11 @@
 /* Estilos para el temporizador */
-.temporizador-container {
+.temporizador-container {    
     position: sticky;
     top: 0; /* Ajusta esto según tus necesidades */
-    background-color: white; /* Cambia esto al color de fondo que desees */
+    background-color: #bccbbc; /* Cambia esto al color de fondo que desees */
     padding: 10px;
     z-index: 1; /* Asegura que el temporizador esté por encima del contenido */
+    display: flex;
   }
 
 
@@ -14,8 +15,8 @@
     right: 20px;
     bottom: 50%; /* Centra verticalmente */
     transform: translateY(50%); /* Ajusta la posición vertical */
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 120px;
     cursor: pointer;
     z-index: 1;
     /* Agrega estilos de diseño, como fondo, bordes, etc. */
@@ -30,8 +31,8 @@
     right: 40px;
     bottom: 70%; /* Centra verticalmente */
     transform: translateY(70%); /* Ajusta la posición vertical */
-    width: 80px;
-    height: 50px;
+    width: 160px;
+    height: 80px;
     cursor: pointer;
     z-index: 2;
     /* Agrega otros estilos necesarios */

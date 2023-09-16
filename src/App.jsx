@@ -7,8 +7,8 @@ import ConfirmacionButton from './components/utiles/ConfirmacionButton'
 
 
 
-function App() {
-  const isOpen = true;
+function App() { 
+  
   return (
     <>
       <div className="whatsapp-button">

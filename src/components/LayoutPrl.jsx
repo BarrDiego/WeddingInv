@@ -5,7 +5,7 @@ import '../assets/styles/images.css'
 
 
 const LayoutPrl = () => {
-  const imgPath = '/src/assets/img/Invitacion originaria-01.png';
+  const imgPath = '/src/assets/img/Invitacion originaria-04.png';
   const image = (
     <img
       src={imgPath}
@@ -13,13 +13,13 @@ const LayoutPrl = () => {
       width={800}
       height={1200}
     />
-  )
+  )  
   return (
     <>
-        <div className='temporizador-container' >
-          <Temporizador/>
-        </div>
         
+        <div className='temporizador-container' >               
+          <Temporizador/>
+        </div>        
         <div className='imagenPRL'>
           {image}
         </div>

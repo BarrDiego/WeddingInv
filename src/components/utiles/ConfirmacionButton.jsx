@@ -6,6 +6,7 @@ import ModalConfirmacion from './ModalConfirmacion';
 const ConfirmacionButton = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState('');
+  const [specialMenu, setSpecialMenu] = useState(false);
 
   const handleModalOpen = () => {
     setIsModalOpen(true);
@@ -37,6 +38,7 @@ const ConfirmacionButton = () => {
         onConfirm={handleConfirm}
         selectedOption={selectedOption}
         onOptionChange={handleOptionChange}
+        specialMenu={specialMenu} toggleSpecialMenu={() => setSpecialMenu(!specialMenu)}
       />
     </div>
   );
