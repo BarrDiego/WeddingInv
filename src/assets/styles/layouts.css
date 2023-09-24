@@ -2,10 +2,19 @@
 .temporizador-container {    
     position: sticky;
     top: 0; /* Ajusta esto según tus necesidades */
-    background-color: #bccbbc; /* Cambia esto al color de fondo que desees */
+    background-color: #8a9b92; /* Cambia esto al color de fondo que desees */
     padding: 10px;
     z-index: 1; /* Asegura que el temporizador esté por encima del contenido */
     display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    text-align: center; /* Texto centrado */
+    border-radius: 3px; /* Agrega un borde redondeado */
+    border: 1px solid rgba(128,128,128,0.5);
+    text-align: center;
+    color: #dae7e0;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
   }
 
 
@@ -24,7 +33,7 @@
   
 /* ConfirmacionButton.css */
 .confirmacion-button {
-    background-color: #3498db;
+    background-color: #8a9b92;
     color: white;
     padding: 10px 20px;
     position: fixed;
@@ -60,7 +69,7 @@
   }
 
   /* ... Otros estilos */
-.modal h2 {
+  .modal h2 {
     margin-top: 0;
   }
   
@@ -80,4 +89,47 @@
     justify-content: flex-end;
     gap: 10px;
     margin-top: 20px;
+  }
+
+  /*... Layout transicion 1 */
+  .transicionUno{
+    display: grid;
+  }
+
+  .transicionHistory {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos arriba en lugar de centrarlos verticalmente */
+    gap: 20px; /* Agrega espacio entre los divs */
+  }
+  
+  .transicionHistory > div {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .transicionLeaf {
+    order: 1; /* Cambia el orden para que aparezca primero */
+  }
+  
+  .transicionLabel {
+    order: 2; /* Cambia el orden para que aparezca después */
+    margin-top: 120px; /* Agrega margen superior para separar de .transicionLeaf */
+  }
+
+  .transicionImgEnd{
+    position: relative;
+    text-align: right;
+    padding-top: 80px;
+  }
+
+  .transicionEnd{
+    width: 1280;
+    height: 200;
+    background-color: #8a9b92;
+  }
+
+  /*... Layout INFORMACION*/
+
+  .layoutInfo{
+    display: flex;
   }

@@ -22,23 +22,9 @@ export const Temporizador = () => {
         return ()=> clearInterval(interval);
     }, [] );
 
-    const imgPath2 = '/src/assets/img/Invitacion originaria-03.png';
-  const imageTemp = (
-    <img
-      src={imgPath2}
-      alt='imagenTemp'
-      width={350}
-      height={100}
-      //position:'absolute' 
-    />
-  )
-
   return (
     <>
-    <div className='imagenTemp'>
-            {imageTemp}
-    </div>
-    <div className='Temporizador'>Faltan: {days} dias , {hours} hs : {minutes} min : {seconds} segs </div>
+    <div>Faltan: {days} dias , {hours} hs : {minutes} min : {seconds} segs </div>
     </>
     
   )

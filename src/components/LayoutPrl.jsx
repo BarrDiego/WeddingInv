@@ -1,11 +1,11 @@
 import React from 'react'
-import { Temporizador } from './utiles/Temporizador';
+
 import '../assets/styles/layouts.css'
 import '../assets/styles/images.css'
 
 
 const LayoutPrl = () => {
-  const imgPath = '/src/assets/img/Invitacion originaria-04.png';
+  const imgPath = '/src/assets/img/InvitacionOriginaria04.png';
   const image = (
     <img
       src={imgPath}
@@ -16,10 +16,6 @@ const LayoutPrl = () => {
   )  
   return (
     <>
-        
-        <div className='temporizador-container' >               
-          <Temporizador/>
-        </div>        
         <div className='imagenPRL'>
           {image}
         </div>
