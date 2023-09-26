@@ -6,6 +6,7 @@ import ConfirmacionButton from './components/utiles/ConfirmacionButton'
 import { LayoutTrn01 } from './components/LayoutTrn01'
 import { LayoutInfo } from './components/LayoutInfo'
 import { Temporizador } from './components/utiles/Temporizador'
+import { LayoutSalon } from './components/LayoutSalon'
 
 
 
@@ -29,6 +30,9 @@ function App() {
         </div>
         <div>
             <LayoutInfo/>
+        </div>
+        <div>
+          <LayoutSalon/>
         </div>
         <ConfirmacionButton/>
         <div>aqui algo mas</div>

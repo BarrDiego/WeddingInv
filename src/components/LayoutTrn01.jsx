@@ -32,13 +32,13 @@ export const LayoutTrn01 = () => {
     />
   ) 
   
-  const imgEndT= '/src/assets/img/InvitacionOriginaria11.png';
+  const imgEndT= '/src/assets/img/transicion02.png';
   const imageEndT = (
     <img
       src={imgEndT}
       alt='transicionEndT'
       width={1280}
-      height={235}
+      height={100}
     />
   ) 
 

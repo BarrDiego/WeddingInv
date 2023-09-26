@@ -114,6 +114,8 @@
   .transicionLabel {
     order: 2; /* Cambia el orden para que aparezca después */
     margin-top: 120px; /* Agrega margen superior para separar de .transicionLeaf */
+    margin-right: 60px;
+    text-align: center;
   }
 
   .transicionImgEnd{
@@ -130,6 +132,84 @@
 
   /*... Layout INFORMACION*/
 
-  .layoutInfo{
+  .layoutInfo {
     display: flex;
+    align-items: flex-start; /* Alinear los elementos arriba */
+  }
+  
+  .layoutInfo > div {
+    margin-right: 40px;
+    text-align: left;
+  }
+  .layoutInfo > div > div > h1{
+    max-width: 300px; /* Cambia esto según tus necesidades */
+    margin: 0 auto; /* Centra el elemento horizontalmente */
+  }
+
+  .layoutInfo > div > div > h2{
+    max-width: 300px; /* Cambia esto según tus necesidades */
+    margin: 0 auto; /* Centra el elemento horizontalmente */
+  }
+
+  .layoutInfo > div > div > h4{
+    max-width: 300px; /* Cambia esto según tus necesidades */
+    margin: 0 auto; /* Centra el elemento horizontalmente */
+  }
+  
+  .map {
+    flex: 1; /* Hace que el div del mapa ocupe todo el espacio restante */
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra alrededor del mapa para resaltarlo */
+  }
+  
+  .map iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+  }
+
+  /*... Layout SALON*/  
+
+  .layoutSalon{
+    display: grid;
+    margin-top: 20px;
+    margin-left: 145px;
+    text-align: left;
+  }
+
+  .imagenesPortal{
+    display: flex;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-right: 180px;
+    justify-content: space-between;
+    border-radius: 8px;
+    
+  }
+
+  .modalSalon {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    z-index: 1000; /* Asegura que esté en la parte superior */
+    cursor: pointer; /* Cambia el cursor para indicar que se puede hacer clic para cerrar */
+  }
+  
+  .modalSalon img {
+    max-width: 90%; /* Limita el ancho máximo de la imagen */
+    max-height: 90%; /* Limita la altura máxima de la imagen */
+    border: 2px solid #fff; /* Añade un borde blanco a la imagen */
+    border-radius: 12px;
+  }
+  
+  .modalSalon img:hover {
+    transform: scale(1.05); /* Agranda la imagen al pasar el mouse por encima */
   }
