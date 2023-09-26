@@ -89,7 +89,7 @@ export const LayoutSalon = () => {
                         src={imgPortal03}
                         alt='portal03'
                         width={300}
-                        height={200}
+                        height={300}
                     />
                 </div>
 
