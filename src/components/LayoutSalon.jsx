@@ -1,56 +1,6 @@
 import React, { useState } from 'react'
 import "../assets/styles/layouts.css"
-// export const LayoutSalon = () => {
-//     const [imagenVisible, setImagenVisible] = useState(false);
-//     const imgPortal = '/src/assets/img/elportal.jpg';
-//     const imagePortal01 = (
-//     <img
-//       src={imgPortal}
-//       alt='portal01'
-//       width={400}
-//       height={400}
-//       onClick={() => setImagenVisible(true)}
-//     />
-//     )
-    
-//     const imgPortal02 = '/src/assets/img/elportal02.jpg';
-//     const imagePortal02 = (
-//     <img
-//       src={imgPortal02}
-//       alt='portal02'
-//       width={400}
-//       height={400}
-//       onClick={() => setImagenVisible(true)}
-//     />
-//     )
-    
-
-//     return (
-//         <div className='layoutSalon'>
-//             <div className='imagenesPortal'>
-//               <h1>El lugar:</h1>
-//               <div>
-//                 {imagePortal01}
-//               </div>
-//               <div>
-//                 {imagePortal02}
-//               </div>
-//           </div>
-    
-//           {/* Modal para mostrar la imagen en tamaño completo */}
-//           {imagenVisible && (
-//             <div className="modal" onClick={() => setImagenVisible(false)}>
-//               <img
-//                 src={imagenVisible === 1 ? {imagePortal01} : {imagePortal02}}
-//                 alt={imagenVisible === 1 ? 'portal01' : 'portal02'}
-//                 width={800}
-//                 height={800}
-//               />
-//             </div>
-//           )}
-//         </div>
-//       );
-//     }
+import "../assets/styles/images.css"
 
 export const LayoutSalon = () => {
     const [imagenVisible, setImagenVisible] = useState(null); // Cambia a null para indicar que ninguna imagen está visible
@@ -63,11 +13,21 @@ export const LayoutSalon = () => {
         setImagenVisible(imagen);
     };
 
+    const imgEnd= '/src/assets/img/InvitacionOriginaria02Minus.png';
+    const imageEnd = (
+        <img
+            src={imgEnd}
+            alt='transicionEnd'
+            width={400}
+            height={220}
+        />
+  )  
+
     return (
+        <>
         <div className='layoutSalon'>
             <h1>El lugar:</h1>
-            <div className='imagenesPortal'>
-                
+            <div className='imagenesPortal'>                
                 <div onClick={() => handleImageClick(imgPortal01)}>
                     <img
                         src={imgPortal01}
@@ -92,7 +52,6 @@ export const LayoutSalon = () => {
                         height={300}
                     />
                 </div>
-
             </div>
 
             {/* Modal para mostrar la imagen en tamaño completo */}
@@ -107,6 +66,10 @@ export const LayoutSalon = () => {
                 </div>
             )}
         </div>
+        <div className='imgEndSalon'>
+            {imageEnd}
+        </div>
+        </>
     );
 };
 

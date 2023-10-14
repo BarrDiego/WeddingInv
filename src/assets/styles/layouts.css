@@ -90,6 +90,14 @@
     gap: 10px;
     margin-top: 20px;
   }
+/*... Layot Principal*/
+.imagenPRL{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  max-height: 1880px;
+  align-items: flex-start;
+}
 
   /*... Layout transicion 1 */
   .transicionUno{
@@ -175,7 +183,7 @@
   .layoutSalon{
     display: grid;
     margin-top: 20px;
-    margin-left: 145px;
+    margin-left: 130px;
     text-align: left;
   }
 
@@ -183,11 +191,19 @@
     display: flex;
     overflow: hidden;
     margin-top: 20px;
-    margin-right: 180px;
+    margin-right: 120px;
+    margin-bottom: 15px;
     justify-content: space-between;
-    border-radius: 8px;
-    
+    align-items: auto;
   }
+
+  .imagenesPortal > div {
+    display: flex;
+    align-items: auto;
+    justify-content: space-between;
+    border: 0.5px solid grey;
+    border-radius: 3px;    
+ }
 
   .modalSalon {
     position: fixed;
@@ -212,4 +228,11 @@
   
   .modalSalon img:hover {
     transform: scale(1.05); /* Agranda la imagen al pasar el mouse por encima */
+  }
+
+  .imgEndSalon{
+    display: flex;
+    position: relative;
+    margin-left: 880px;
+    text-align: right;
   }

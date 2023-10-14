@@ -3,12 +3,12 @@ import "../assets/styles/layouts.css"
 
 
 export const LayoutInfo = () => {
-  const imgUp = '/src/assets/img/InvitacionOriginaria03.png';
+  const imgUp = '/src/assets/img/InvitacionOriginaria04.png';
   const imageUp = (
     <img
       src={imgUp}
       alt='transicionUno'
-      width={600}
+      width={500}
       height={400}
     />
   )
@@ -19,8 +19,8 @@ export const LayoutInfo = () => {
             <div>
                 {imageUp}
             </div>
-            <div>
-                <h1>Ceremonia:</h1>           
+            <div>                
+                <h1>Ceremonia:</h1>          
                 <h2>El Portal, Salon de Eventos</h2>
                 <h4>
                   Calle 57 Nro. 1110

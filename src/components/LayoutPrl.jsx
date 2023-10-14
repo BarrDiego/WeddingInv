@@ -5,22 +5,22 @@ import '../assets/styles/images.css'
 
 
 const LayoutPrl = () => {
-  const imgPath = '/src/assets/img/InvitacionOriginaria04.png';
+  const imgPath = '/src/assets/img/InvitacionOriginaria01.png';
   const image = (
     <img
       src={imgPath}
       alt='imagenPrl'
-      width={800}
-      height={1200}
+      width={1280}
+      height={1880}
     />
   )  
   return (
-    <>
+    
         <div className='imagenPRL'>
           {image}
         </div>
         
-    </>
+    
 
   )
 };

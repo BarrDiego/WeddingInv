@@ -7,6 +7,7 @@ import { LayoutTrn01 } from './components/LayoutTrn01'
 import { LayoutInfo } from './components/LayoutInfo'
 import { Temporizador } from './components/utiles/Temporizador'
 import { LayoutSalon } from './components/LayoutSalon'
+import { LayoutTrn02 } from './components/LayoutTrn02'
 
 
 
@@ -22,7 +23,7 @@ function App() {
         <div className='temporizador-container' >               
           <Temporizador/>
         </div> 
-        <div>
+        <div className='divPrl'>
           <LayoutPrl/>
         </div>
         <div>
@@ -33,6 +34,9 @@ function App() {
         </div>
         <div>
           <LayoutSalon/>
+        </div>
+        <div>
+          <LayoutTrn02/>
         </div>
         <ConfirmacionButton/>
         <div>aqui algo mas</div>
