@@ -249,7 +249,7 @@
   }
   .labelMsg {
     display: flex;
-    margin-left: 70px;
+    margin-left: 30px;
     justify-content: space-evenly;
   }
 
@@ -259,5 +259,4 @@
 
   .imgDos{
     margin-left: 30px;
-    margin-bottom: 15px;
   }

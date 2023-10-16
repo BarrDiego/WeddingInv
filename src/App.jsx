@@ -8,6 +8,7 @@ import { LayoutInfo } from './components/LayoutInfo'
 import { Temporizador } from './components/utiles/Temporizador'
 import { LayoutSalon } from './components/LayoutSalon'
 import { LayoutTrn02 } from './components/LayoutTrn02'
+import { LayoutConf } from './components/LayoutConf'
 
 
 
@@ -39,7 +40,9 @@ function App() {
           <LayoutTrn02/>
         </div>
         <ConfirmacionButton/>
-        <div>aqui algo mas</div>
+        <div>
+          <LayoutConf/>
+        </div>
       </div>
       
     </>

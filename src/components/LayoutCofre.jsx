@@ -49,8 +49,7 @@ export const LayoutCofre = () => {
                 {imageRings}
                 <h2>Por el regalo no te precupes hay Cofre!</h2>
                 {imageChest}
-            </div>
-            
+            </div>            
             <div className='imgDos'>
                 {imageEn}
             </div>
