@@ -11,7 +11,7 @@ export const LayoutCofre = () => {
             height={140}
         />
   )
-  const rings= '/src/assets/img/chest.jpg';
+  const rings= '/src/assets/img/rings.png';
   const imageRings = (
       <img
           src={rings}
