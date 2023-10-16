@@ -44,7 +44,7 @@
     height: 80px;
     cursor: pointer;
     z-index: 2;
-    /* Agrega otros estilos necesarios */
+    border: 1px solid black;
   }
 
 /* ModalConfirmacion.css */
@@ -233,6 +233,31 @@
   .imgEndSalon{
     display: flex;
     position: relative;
-    margin-left: 880px;
+    margin-left: 1100px;
     text-align: right;
+  }
+   /*... Layout COFRE*/  
+  .layoutCofre{
+    display: grid;
+    position: relative;
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .imgUno{
+    margin-left: 1100px;
+  }
+  .labelMsg {
+    display: flex;
+    margin-left: 70px;
+    justify-content: space-evenly;
+  }
+
+  .labelMsg > h2{
+    font-size: 35px;
+  }
+
+  .imgDos{
+    margin-left: 30px;
+    margin-bottom: 15px;
   }

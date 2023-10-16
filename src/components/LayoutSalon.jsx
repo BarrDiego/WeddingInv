@@ -13,13 +13,13 @@ export const LayoutSalon = () => {
         setImagenVisible(imagen);
     };
 
-    const imgEnd= '/src/assets/img/InvitacionOriginaria02Minus.png';
+    const imgEnd= '/src/assets/img/InvitacionOriginaria07Rot.png';
     const imageEnd = (
         <img
             src={imgEnd}
             alt='transicionEnd'
-            width={400}
-            height={220}
+            width={160}
+            height={140}
         />
   )  
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import { LayoutCofre } from './LayoutCofre';
 
 export const LayoutTrn02 = () => {
 
@@ -11,12 +12,25 @@ export const LayoutTrn02 = () => {
             height={425}
     />
   )
+  const imgEndT= '/src/assets/img/transicion02.png';
+  const imageEndT = (
+    <img
+      src={imgEndT}
+      alt='transicionEndT'
+      width={1280}
+      height={100}
+    />
+  ) 
+
   return (
     <>
         <div>
             {imageTr02}
         </div>
-        
+        <LayoutCofre/>
+        <div>
+          {imageEndT}
+        </div>
     </>
     
   )
