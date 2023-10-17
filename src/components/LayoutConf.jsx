@@ -1,4 +1,6 @@
 import React from 'react'
+import ConfirmacionButton from './utiles/ConfirmacionButton';
+import WhatsAppButton from './utiles/WhatsappButton';
 
 export const LayoutConf = () => {
 
@@ -19,11 +21,14 @@ export const LayoutConf = () => {
             necesita un Menu Especial (vegano, vegetariano, sin TACC)
             lo aclares en la confirmacion de la asistencia
         </h3>
-        <p>**** boton confirmacion ****</p>
+        <div className='buttonConf'>
+            <ConfirmacionButton buttonClass={'confirmacionBut'}/>
+        </div>        
         <h2>Cualquier duda que tengas consultanos</h2>
-        <p> **** boton whatsapp *****</p>
+        <div className='buttonWa'>
+            <WhatsAppButton buttonClass={'confirmacionWa'} imageSource={'/src/assets/img/walogo2.png'}/>
+        </div>        
         <h2>Te esperamos!</h2>
-        <h1>Diego & Victoria</h1>
         <div>
             {imageFinal}
         </div>

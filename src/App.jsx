@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
-import LayoutPrl from './components/layoutPrl'
+import LayoutPrl from './components/LayoutPrl'
 import WhatsAppButton from './components/utiles/WhatsappButton'
 import ConfirmacionButton from './components/utiles/ConfirmacionButton'
 import { LayoutTrn01 } from './components/LayoutTrn01'
@@ -15,11 +15,38 @@ import { LayoutConf } from './components/LayoutConf'
 
 function App() { 
   
+  const [ layoutConfVisible, setLayoutConfVisible] = useState(true)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const layoutConfElement = document.getElementById('layoutConf');
+      if (layoutConfElement) {
+        const rect = layoutConfElement.getBoundingClientRect();
+        const offset = 500;
+        if (rect.top >= offset) {
+          setLayoutConfVisible(true);
+        } else {
+          setLayoutConfVisible(false);
+        }
+      }      
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);  
+  
   return (
     <>
-      <div className="whatsapp-button">
-        <WhatsAppButton />
-      </div>
+      
+      {layoutConfVisible && (
+        <div className='whatsapp-button'>
+          <WhatsAppButton/>
+        </div>
+      )}
+      
       <div className='style-gral'>
         <div className='temporizador-container' >               
           <Temporizador/>
@@ -39,8 +66,13 @@ function App() {
         <div>
           <LayoutTrn02/>
         </div>
-        <ConfirmacionButton/>
-        <div>
+        {layoutConfVisible && (
+          <div>
+            <ConfirmacionButton/>
+          </div>
+        )}        
+                  
+        <div id='layoutConf'>          
           <LayoutConf/>
         </div>
       </div>

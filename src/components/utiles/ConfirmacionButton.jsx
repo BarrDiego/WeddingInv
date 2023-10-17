@@ -3,7 +3,7 @@ import '/src/assets/styles/layouts.css'; // Asegúrate de tener un archivo CSS p
 
 import ModalConfirmacion from './ModalConfirmacion';
 
-const ConfirmacionButton = () => {
+const ConfirmacionButton = ({buttonClass}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState('');
   const [specialMenu, setSpecialMenu] = useState(false);
@@ -28,7 +28,7 @@ const ConfirmacionButton = () => {
 
   return (
     <div>
-      <button className="confirmacion-button" onClick={handleModalOpen}>
+      <button className={ buttonClass || "confirmacion-button"} onClick={handleModalOpen}>
         Confirmar Asistencia
       </button>
 

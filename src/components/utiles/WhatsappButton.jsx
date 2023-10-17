@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '/src/assets/styles/layouts.css';
 
-const WhatsAppButton = () => {
+const WhatsAppButton = ({imageSource , buttonClass }) => {
   const [buttonDisabled, setButtonDisabled] = useState(false);
 
   const isMobile = () => {
@@ -32,9 +32,9 @@ const WhatsAppButton = () => {
   return (
     <button id="submit" onClick={handleWhatsAppClick} disabled={buttonDisabled}>
       <img 
-      src='/src/assets/img/WALogo.png'
+      src={imageSource || '/src/assets/img/WALogo.png'}
       alt='Whatsapp'
-      className='whatsapp-button'
+      className={ buttonClass || 'whatsapp-button'}
       />
     </button>
   );

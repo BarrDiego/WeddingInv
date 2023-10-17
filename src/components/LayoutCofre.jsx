@@ -46,9 +46,13 @@ export const LayoutCofre = () => {
                 {imageStr}
             </div>
             <div className='labelMsg'>
-                {imageRings}
+                <div className='imageRings'>
+                    {imageRings}
+                </div>                
                 <h2>Por el regalo no te precupes hay Cofre!</h2>
-                {imageChest}
+                <div className='imageChest'>
+                    {imageChest}
+                </div>                
             </div>            
             <div className='imgDos'>
                 {imageEn}
