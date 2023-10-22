@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '/src/assets/styles/layouts.css'; // Asegúrate de tener un archivo CSS para los estilos del botón
 
 import ModalConfirmacion from './ModalConfirmacion';
+import { WhatsappLink } from './WhatsappLink';
 
 const ConfirmacionButton = ({buttonClass}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -21,8 +22,13 @@ const ConfirmacionButton = ({buttonClass}) => {
     setSelectedOption(event.target.value);
   };
 
-  const handleConfirm = () => {
-    // Realiza acciones con la opción seleccionada, por ejemplo, enviarla al servidor
+  const handleSpecialMenuChange = (value) => {
+    setSpecialMenu(value);
+  }
+ 
+
+  const handleConfirm = () => {   
+    console.log("cerro el modal") 
     handleModalClose();
   };
 
@@ -38,7 +44,8 @@ const ConfirmacionButton = ({buttonClass}) => {
         onConfirm={handleConfirm}
         selectedOption={selectedOption}
         onOptionChange={handleOptionChange}
-        specialMenu={specialMenu} toggleSpecialMenu={() => setSpecialMenu(!specialMenu)}
+        toggleSpecialMenu={handleSpecialMenuChange}
+        specialMenu={specialMenu} 
       />
     </div>
   );

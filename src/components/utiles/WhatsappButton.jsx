@@ -16,7 +16,7 @@ const WhatsAppButton = ({imageSource , buttonClass }) => {
   const handleWhatsAppClick = () => {
     setButtonDisabled(true);
     setTimeout(() => {
-      const nroTelefono = "2215687487";
+      const nroTelefono = "2215408262";
       const mensaje = "send?phone=" + nroTelefono + "&text=Hola! necesito ayuda con la confirmacion de la boda!!";
 
       if (isMobile()) {

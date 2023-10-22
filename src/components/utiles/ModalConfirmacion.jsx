@@ -1,7 +1,10 @@
 import React from 'react';
 import '/src/assets/styles/layouts.css'; 
+import { WhatsappLink } from './WhatsappLink';
 
-const ModalConfirmacion = ({ isOpen, onClose, onConfirm, selectedOption, onOptionChange, specialMenu}) => {
+const ModalConfirmacion = ({ isOpen, onClose, onConfirm, selectedOption, onOptionChange, toggleSpecialMenu, specialMenu}) => {
+
+  const clg = console.log("hizo click en el confirm del modal")
     if (!isOpen) return null;
     return (
         <div className="modal-overlay">
@@ -13,19 +16,30 @@ const ModalConfirmacion = ({ isOpen, onClose, onConfirm, selectedOption, onOptio
               <option value="novio">Invitado del Novio</option>
               <option value="novia">Invitado de la Novia</option>
             </select>
-          <div className="checkbox">
-            <input type="checkbox" id="specialMenu" checked={specialMenu} />
-            <label htmlFor="specialMenu">Deseo incluir un menú especial para mí o acompañante</label>
-          </div>
+            <div className="checkbox">
+              <input
+                type="checkbox"
+                id="specialMenu"
+                checked={specialMenu}
+                onChange={() => toggleSpecialMenu(!specialMenu)}
+              />
+              <label htmlFor="specialMenu">Deseo incluir un menú especial para mí o acompañante</label>
+            </div>
+
             <div className="modal-buttons">
               <button onClick={onClose}>Cancelar</button>
-              <button onClick={() => onConfirm(specialMenu)} disabled={!selectedOption}>
-                Confirmar
-              </button>
+              <button onClick={()=>{
+                <WhatsappLink origenInvitado={selectedOption} origenMensaje={specialMenu ? 'confirmacionMenuEspecial' : 'confirmacionNormal'}/> 
+                  onConfirm()}}>                 
+                  Confirmar
+                </button>            
+                         
+              
             </div>
           </div>
         </div>
       );
     };
 
-export default ModalConfirmacion
+export default ModalConfirmacion;
+
