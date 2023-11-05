@@ -1,45 +1,51 @@
 import React from 'react';
-import '/src/assets/styles/layouts.css'; 
+import '/src/assets/styles/layouts.css';
 import { WhatsappLink } from './WhatsappLink';
 
-const ModalConfirmacion = ({ isOpen, onClose, onConfirm, selectedOption, onOptionChange, toggleSpecialMenu, specialMenu}) => {
+const ModalConfirmacion = ({ isOpen, onClose, onConfirm, selectedOption, specialMenu }) => {
+  if (!isOpen) return null;
 
-  const clg = console.log("hizo click en el confirm del modal")
-    if (!isOpen) return null;
-    return (
-        <div className="modal-overlay">
-          <div className="modal">
-            <h2>Confirmar Asistencia</h2>
-            <p>Selecciona si eres invitado del novio o la novia:</p>
-            <select value={selectedOption} onChange={onOptionChange}>
-              <option value="">Seleccionar</option>
-              <option value="novio">Invitado del Novio</option>
-              <option value="novia">Invitado de la Novia</option>
-            </select>
-            <div className="checkbox">
-              <input
-                type="checkbox"
-                id="specialMenu"
-                checked={specialMenu}
-                onChange={() => toggleSpecialMenu(!specialMenu)}
-              />
-              <label htmlFor="specialMenu">Deseo incluir un menú especial para mí o acompañante</label>
-            </div>
+  const sendToWhatsapp = (selectedOption, specialMenu) => {
+    let origenMensaje = specialMenu ? 'confirmacionMenuEspecial' : 'confirmacionNormal';
+    WhatsappLink({ origenInvitado: selectedOption, origenMensaje });
+  };
 
-            <div className="modal-buttons">
-              <button onClick={onClose}>Cancelar</button>
-              <button onClick={()=>{
-                <WhatsappLink origenInvitado={selectedOption} origenMensaje={specialMenu ? 'confirmacionMenuEspecial' : 'confirmacionNormal'}/> 
-                  onConfirm()}}>                 
-                  Confirmar
-                </button>            
-                         
-              
-            </div>
-          </div>
+  return (
+    <div className="modal-overlay">
+      <div className="modal">
+        <h2>Confirmar Asistencia</h2>
+        <p>Selecciona si eres invitado del novio o la novia:</p>
+        <select value={selectedOption} onChange={onOptionChange}>
+          <option value="">Seleccionar</option>
+          <option value="novio">Invitado del Novio</option>
+          <option value="novia">Invitado de la Novia</option>
+        </select>
+        <div className="checkbox">
+          <input
+            type="checkbox"
+            id="specialMenu"
+            checked={specialMenu}
+            onChange={() => toggleSpecialMenu(!specialMenu)}
+          />
+          <label htmlFor="specialMenu">Deseo incluir un menú especial para mí o acompañante</label>
         </div>
-      );
-    };
+
+        <div className="modal-buttons">
+          <button onClick={onClose}>Cancelar</button>
+          <button onClick={() => {
+            onConfirm();
+            if (selectedOption) {
+              sendToWhatsapp(selectedOption, specialMenu);
+            }
+          }}>
+            Confirmar
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default ModalConfirmacion;
+
 

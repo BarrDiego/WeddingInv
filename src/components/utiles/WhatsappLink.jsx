@@ -1,7 +1,6 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-export const WhatsappLink = ({origenInvitado, origenMensaje}) => {
+export const WhatsappLink = ({ origenInvitado, origenMensaje }) => {
   const [nroTelefono, setNroTelefono] = useState('');
   const [texto, setTexto] = useState('');
 
@@ -49,17 +48,15 @@ export const WhatsappLink = ({origenInvitado, origenMensaje}) => {
       window.open("https://web.whatsapp.com/" + mensaje, "_blank");
     }
   };
-  const clg = console.log("llego al onclic de whatsapp")
+
+  console.log("Llegó al onClick de WhatsApp");
 
   return (
     <>
-    {clg}
-    <button onClick={()=>{
-      sendToWhatsapp;
-    }}>Confirmar</button>
+      <button onClick={sendToWhatsapp}>Confirmar</button>
     </>
-    
   );
 };
+
 
 
