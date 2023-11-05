@@ -4,7 +4,24 @@ import { WhatsappLink } from './WhatsappLink';
 
 const ModalConfirmacion = ({ isOpen, onClose, onConfirm, selectedOption, onOptionChange, toggleSpecialMenu, specialMenu}) => {
 
-  const clg = console.log("hizo click en el confirm del modal")
+    // Función para confirmar la acción
+    const confirmAction = () => {
+    // Obtiene los datos del usuario
+    const tipoInvitado = selectedOption;
+    const menuEspecial = specialMenu;
+
+    // Llama a la función de redirección a WhatsApp
+    sendToWhatsapp(tipoInvitado, menuEspecial);
+
+     // Cierra el modal
+      onClose();
+    };
+    // Llama a la función confirmAction() en el botón de confirmación
+    onConfirm = confirmAction;
+
+
+    
+    
     if (!isOpen) return null;
     return (
         <div className="modal-overlay">
@@ -28,12 +45,9 @@ const ModalConfirmacion = ({ isOpen, onClose, onConfirm, selectedOption, onOptio
 
             <div className="modal-buttons">
               <button onClick={onClose}>Cancelar</button>
-              <button onClick={()=>{
-                <WhatsappLink origenInvitado={selectedOption} origenMensaje={specialMenu ? 'confirmacionMenuEspecial' : 'confirmacionNormal'}/> 
-                  onConfirm()}}>                 
+              <button onClick={onConfirm}>               
                   Confirmar
-                </button>            
-                         
+                </button>   
               
             </div>
           </div>
@@ -42,4 +56,6 @@ const ModalConfirmacion = ({ isOpen, onClose, onConfirm, selectedOption, onOptio
     };
 
 export default ModalConfirmacion;
+
+
 
