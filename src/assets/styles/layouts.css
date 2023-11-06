@@ -285,7 +285,6 @@
 
   /*.. Layout CONFIRMACION*/
   .buttonWa{
-    border: 2px solid #213547;
     max-width: 180px;
     border-radius: 10px;
     margin-left: 550px;
@@ -297,7 +296,7 @@
   }
 
   .confirmacionBut {
-    background-color: #213547;
+    background-color: #45544e;
     color: white;
     width: 250px;
     height: 80px;

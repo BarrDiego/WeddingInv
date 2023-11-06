@@ -26,7 +26,7 @@ export const LayoutConf = () => {
         </div>        
         <h2>Cualquier duda que tengas consultanos</h2>
         <div className='buttonWa'>
-            <WhatsAppButton buttonClass={'confirmacionWa'} imageSource={'/src/assets/img/walogo2.png'}/>
+            <WhatsAppButton buttonClass={'confirmacionWa'} imageSource={'/src/assets/img/WALogo.png'}/>
         </div>        
         <h2>Te esperamos!</h2>
         <div>

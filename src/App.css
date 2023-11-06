@@ -5,13 +5,16 @@
   text-align: center;
 }
 
-
+h1, h2, h3, p, label{
+  color: #45544e;
+}
 @media (prefers-color-scheme: dark) {
   h1, h2, h3, p, label {
-    color: #8a9b92;
+    color: #45544e;
     -webkit-text-stroke: 1px grey;
   }
 }
+
 .logo {
   height: 6em;
   padding: 1.5em;
