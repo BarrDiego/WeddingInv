@@ -1,3 +1,9 @@
+/*import font*/
+@font-face {
+  font-family: 'appFont';
+  src: url('../src/assets/fonts/Edu_TAS_Beginner/static/EduTASBeginner-Medium.ttf');
+}
+
 /* Estilos para el temporizador */
 .temporizador-container {    
     position: sticky;
@@ -13,8 +19,8 @@
     border: 1px solid rgba(128,128,128,0.5);
     text-align: center;
     color: #dae7e0;
-    font-size: 24px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    font-family: 'appFont', sans-serif;
   }
 
 
