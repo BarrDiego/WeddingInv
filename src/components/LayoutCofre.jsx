@@ -11,7 +11,7 @@ export const LayoutCofre = () => {
             height={140}
         />
   )
-  const rings= '/src/assets/img/rings.png';
+  const rings= '/src/assets/img/rings1.png';
   const imageRings = (
       <img
           src={rings}
@@ -20,7 +20,7 @@ export const LayoutCofre = () => {
           height={140}
       />
 )
-  const chest= '/src/assets/img/chest.jpg';
+  const chest= '/src/assets/img/chest1.png';
   const imageChest = (
       <img
           src={chest}
@@ -49,7 +49,7 @@ export const LayoutCofre = () => {
                 <div className='imageRings'>
                     {imageRings}
                 </div>                
-                <h2>Por el regalo no te precupes hay Cofre!</h2>
+                <h2>Si deseas realizarnos un regalo, no te precupes hay Cofre!</h2>
                 <div className='imageChest'>
                     {imageChest}
                 </div>                

@@ -3,13 +3,13 @@ import '../assets/styles/images.css'
 import '../assets/styles/layouts.css'
 
 export const LayoutTrn01 = () => {
-  const imgPath = '/src/assets/img/transicion01.png';
+  const imgPath = '/src/assets/img/transicion0101.png';
   const image = (
     <img
       src={imgPath}
       alt='transicionUno'
       width={1280}
-      height={425}
+      height={375}
     />
   ) 
 
@@ -56,14 +56,11 @@ export const LayoutTrn01 = () => {
               <p>
                 Nuestra Historia comienza cuando dos personas
                 que ni soñaban conocerse, terminan encontrandose
-                en el isntante menos esperado.
+                en el instante menos esperado.
                 Pero en el momento indicado.
               </p>
             </div>            
-        </div> 
-          <div className='transicionImgEnd'>
-              {imageEnd}
-          </div>
+        </div>           
           <div className='transicionEnd'>
             {imageEndT}                
           </div>     

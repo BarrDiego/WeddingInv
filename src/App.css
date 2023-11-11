@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -9,18 +9,29 @@
   font-family: 'appFont';
   src: url('../src/assets/fonts/Edu_TAS_Beginner/static/EduTASBeginner-Medium.ttf');
 }
+@font-face {
+  font-family: 'pFont';
+  src: url('../src/assets/fonts/Kalam/Kalam-Regular.ttf');
+}
 
-h1, h2, h3, p, label{
+h1, h2, h3, label{
   color: #45544e;
   font-family: 'appFont', sans-serif;
 }
+p{
+  font-size: 20px;
+  color: #45544e;
+  font-family: 'pFont', serif;
+}
 @media (prefers-color-scheme: dark) {
-  h1, h2, h3, p, label {
+  h1, h2, h3, label {
     color: #45544e;
     font-family: 'appFont', sans-serif;
   }
   p{
     font-size: 20px;
+    color: #45544e;
+    font-family: 'pFont', serif;
   }
 }
 
@@ -53,13 +64,102 @@ h1, h2, h3, p, label{
 }
 
 body {
-  background-color: rgba(192, 192, 192, 0.5); /* Fondo gris semi-transparente para el cuerpo */
+  background-color: rgba(192, 192, 192, 0.5); /* Fondo gris semi-transparente para el cuerpo *//*
+}
+/*
+.style-gral{
+  border: 1px rgba(128,128,128,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Efecto de sombreado */
+  /*background-color: white; /* RGBA(Grises, Opacidad) *//*
+  border-radius: 5px;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'appFont';
+  src: url('../src/assets/fonts/Edu_TAS_Beginner/static/EduTASBeginner-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'pFont';
+  src: url('../src/assets/fonts/Kalam/Kalam-Regular.ttf');
+}
+
+h1, h2, h3, label{
+  color: #45544e;
+  font-family: 'appFont', sans-serif;
+}
+
+p{
+  font-size: 20px;
+  color: #45544e;
+  font-family: 'pFont', serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  h1, h2, h3, label {
+    color: #45544e;
+    font-family: 'appFont', sans-serif;
+  }
+
+  p{
+    font-size: 20px;
+    color: #45544e;
+    font-family: 'pFont', serif;
+  }
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+body {
+  background-color: rgba(192, 192, 192, 0.5);
 }
 
 .style-gral{
   border: 1px rgba(128,128,128,0.5);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Efecto de sombreado */
-  background-color: white; /* RGBA(Grises, Opacidad) */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: white;
   border-radius: 5px;
 }
 
@@ -70,3 +170,57 @@ body {
 .read-the-docs {
   color: #888;
 }
+
+/* Media queries para pantallas de diferentes tamaños */
+@media only screen and (max-width: 600px) {
+  #root {
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    max-width: 600px;
+      
+  }
+  .style-gral{
+    border: 1px rgba(128,128,128,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 5px;
+    display: grid;
+  }
+
+  .logo {
+    height: 4em;
+    padding: 1em;
+  }
+
+  .card {
+    padding: 1em;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  #root {    
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    max-width: 1024px;
+  }
+  .style-gral{
+    border: 1px rgba(128,128,128,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    max-width: fit-content;
+    border-radius: 5px;
+    display: grid;
+  }
+
+  .logo {
+    height: 5em;
+    padding: 1.5em;
+  }
+
+  .card {
+    padding: 1.5em;
+  }
+}
+

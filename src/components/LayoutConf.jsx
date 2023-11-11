@@ -4,32 +4,32 @@ import WhatsAppButton from './utiles/WhatsappButton';
 
 export const LayoutConf = () => {
 
-    const imgFinal= '/src/assets/img/transicionFinal.png';
+    const imgFinal= '/src/assets/img/transicionFinal02.png';
     const imageFinal = (
         <img
             src={imgFinal}
             alt='transicionEn'
             width={1280}
-            height={425}
+            height={375}
         />
   )
   return (
     <>
         <h1>Podras venir?</h1>
-        <h3>
+        <h2 className='textMenu'>
             Es importante que si vos o alguien de tu familia
             necesita un Menu Especial (vegano, vegetariano, sin TACC)
             lo aclares en la confirmacion de la asistencia
-        </h3>
+        </h2>
         <div className='buttonConf'>
             <ConfirmacionButton buttonClass={'confirmacionBut'}/>
         </div>        
         <h2>Cualquier duda que tengas consultanos</h2>
         <div className='buttonWa'>
-            <WhatsAppButton buttonClass={'confirmacionWa'} imageSource={'/src/assets/img/WALogo.png'}/>
+            <WhatsAppButton buttonClass={'confirmacionWa'} imageSource={'/src/assets/img/walogo3.png'}/>
         </div>        
-        <h2>Te esperamos!</h2>
-        <div>
+        <h1>Te esperamos!</h1>
+        <div className='finalTransi'>
             {imageFinal}
         </div>
     </>

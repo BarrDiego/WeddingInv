@@ -3,13 +3,13 @@ import { LayoutCofre } from './LayoutCofre';
 
 export const LayoutTrn02 = () => {
 
-    const imgTr02= '/src/assets/img/transicion03.png';
+    const imgTr02= '/src/assets/img/transicion0301.png';
     const imageTr02 = (
         <img
             src={imgTr02}
             alt='transicionEndT'
             width={1280}
-            height={425}
+            height={375}
     />
   )
   const imgEndT= '/src/assets/img/transicion02.png';

@@ -1,14 +1,18 @@
 /*import font*/
 @font-face {
   font-family: 'appFont';
-  src: url('../src/assets/fonts/Edu_TAS_Beginner/static/EduTASBeginner-Medium.ttf');
+  src: url('../fonts/Edu_TAS_Beginner/static/EduTASBeginner-Medium.ttf');
+}
+@font-face {
+  font-family: 'modalFont';
+  src: url('../fonts/Kalam/Kalam-Regular.ttf');
 }
 
 /* Estilos para el temporizador */
 .temporizador-container {    
     position: sticky;
     top: 0; /* Ajusta esto según tus necesidades */
-    background-color: #8a9b92; /* Cambia esto al color de fondo que desees */
+    background-color: #45544e; /* Cambia esto al color de fondo que desees */
     padding: 10px;
     z-index: 1; /* Asegura que el temporizador esté por encima del contenido */
     display: flex;
@@ -39,9 +43,8 @@
   
 /* ConfirmacionButton.css */
 .confirmacion-button {
-    background-color: #8a9b92;
-    color: white;
-    padding: 10px 20px;
+    background-color: #45544e;
+    color: #dae7e0;
     position: fixed;
     right: 40px;
     bottom: 70%; /* Centra verticalmente */
@@ -51,7 +54,8 @@
     cursor: pointer;
     z-index: 2;
     border: 1px solid black;
-    font-family: 'appFont', sans-serif;
+    font-family: 'modalFont', sans-serif;
+    font-size: 18px;
   }
 
 /* ModalConfirmacion.css */
@@ -91,7 +95,7 @@
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-family: 'appFont', sans-serif;
+    font-family: 'modalFont', sans-serif;
   }
   
   .modal-buttons {
@@ -99,7 +103,7 @@
     justify-content: flex-end;
     gap: 10px;
     margin-top: 20px;
-    font-family: 'appFont', sans-serif;
+    font-family: 'modalFont', sans-serif;
   }
 
 /*... Layout Principal */
@@ -134,10 +138,14 @@
   .transicionLabel {
     order: 2; /* Cambia el orden para que aparezca después */
     margin-top: 120px; /* Agrega margen superior para separar de .transicionLeaf */
-    margin-right: 60px;
+    margin-right: 100px;
+    padding-right: 60px;
+    margin-bottom: 20px;
     text-align: center;
   }
-
+  .transicionLabel > p{
+    font-size: 22px;
+  }
   .transicionImgEnd{
     position: relative;
     text-align: right;
@@ -295,22 +303,49 @@
   }
 
   /*.. Layout CONFIRMACION*/
+  .textMenu{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .buttonWa{
     max-width: 180px;
+    width: 180px;
+    height: 160px;
+    padding-bottom: 10px;
     border-radius: 10px;
     margin-left: 550px;
+    background-color: white;
+  }
+  @media (prefers-color-scheme: dark){
+    .buttonWa{
+      background-color: white;
+    }
+    .confirmacionWa{
+      background-color: white;
+    }
+    .submitWhat{
+      background-color: white;
+    }
   }
   .confirmacionWa{
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
     border-radius: 8px;
+    background-color: white;
   }
 
   .confirmacionBut {
     background-color: #45544e;
-    color: white;
+    color: #dae7e0;
     width: 250px;
     height: 80px;
     border: 1px solid black;
-    font-family: 'appFont', sans-serif;
+    font-family: 'modalFont', sans-serif;
+    font-size: 22px;
+  }
+
+  .finalTransi{
+    background-color: #8a9b92;
   }
