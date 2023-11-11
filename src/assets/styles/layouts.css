@@ -51,6 +51,7 @@
     cursor: pointer;
     z-index: 2;
     border: 1px solid black;
+    font-family: 'appFont', sans-serif;
   }
 
 /* ModalConfirmacion.css */
@@ -77,10 +78,12 @@
   /* ... Otros estilos */
   .modal h2 {
     margin-top: 0;
+    font-family: 'appFont', sans-serif;
   }
   
   .modal p {
     margin-bottom: 20px;
+    font-family: 'appFont', sans-serif;
   }
   
   .modal select {
@@ -88,6 +91,7 @@
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-family: 'appFont', sans-serif;
   }
   
   .modal-buttons {
@@ -95,6 +99,7 @@
     justify-content: flex-end;
     gap: 10px;
     margin-top: 20px;
+    font-family: 'appFont', sans-serif;
   }
 
 /*... Layout Principal */
@@ -307,4 +312,5 @@
     width: 250px;
     height: 80px;
     border: 1px solid black;
+    font-family: 'appFont', sans-serif;
   }
