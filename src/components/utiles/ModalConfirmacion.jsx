@@ -47,7 +47,7 @@ const ModalConfirmacion = ({ isOpen, onClose, onConfirm, selectedOption, onOptio
     // Llama a la función de redirección a WhatsApp
     sendToWhatsapp(tipoInvitado, menuEspecial, (telefono, text) =>{
       
-      const mensaje = "send?phone=" + telefono + "&text=" + text;
+      const mensaje = "send?phone=549" + telefono + "&text=" + text;
       console.log(mensaje)
       if (isMobile()) {
         window.open("https://wa.me/" + mensaje, "_blank");
@@ -67,7 +67,7 @@ const ModalConfirmacion = ({ isOpen, onClose, onConfirm, selectedOption, onOptio
 
             {mostarExito ? (
           <div>
-            <h2>Redirigido con éxito</h2>
+            <h2>Redirigido con exito</h2>
             <button onClick={() => {setMostrarExito(false); onClose()}}>Continuar</button>
           </div>
         ) : (
