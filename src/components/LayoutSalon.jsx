@@ -5,15 +5,15 @@ import "../assets/styles/images.css"
 export const LayoutSalon = () => {
     const [imagenVisible, setImagenVisible] = useState(null); // Cambia a null para indicar que ninguna imagen está visible
 
-    const imgPortal01 = '../src/assets/img/Elportal.jpg';
-    const imgPortal02 = '../src/assets/img/Elportal02.jpg';
-    const imgPortal03 = '../src/assets/img/Elportal03.jpg';
+    const imgPortal01 = '/public/img/Elportal.jpg';
+    const imgPortal02 = '/public/img/Elportal02.jpg';
+    const imgPortal03 = '/public/img/Elportal03.jpg';
 
     const handleImageClick = (imagen) => {
         setImagenVisible(imagen);
     };
 
-    const imgEnd= '../src/assets/img/InvitacionOriginaria07Rot.png';
+    const imgEnd= '/public/img/InvitacionOriginaria07Rot.png';
     const imageEnd = (
         <img
             src={imgEnd}

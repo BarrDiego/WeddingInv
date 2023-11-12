@@ -3,7 +3,7 @@ import "../assets/styles/layouts.css"
 
 
 export const LayoutInfo = () => {
-  const imgUp = '../src/assets/img/InvitacionOriginaria04.png';
+  const imgUp = '/public/img/InvitacionOriginaria04.png';
   const imageUp = (
     <img
       src={imgUp}

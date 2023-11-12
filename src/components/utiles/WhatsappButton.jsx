@@ -32,7 +32,7 @@ const WhatsAppButton = ({imageSource , buttonClass }) => {
   return (
     <button className="submitWhat" id="submit" onClick={handleWhatsAppClick} disabled={buttonDisabled}>
       <img 
-      src={imageSource || '../src/assets/img/WALogo.png'}
+      src={imageSource || '/public/img/WALogo.png'}
       alt='Whatsapp'
       className={ buttonClass || 'whatsapp-button'}
       width={150}
