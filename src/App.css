@@ -18,7 +18,7 @@ h1, h2, h3, label{
   color: #45544e;
   font-family: 'appFont', sans-serif;
 }
-p{
+p, h4{
   font-size: 20px;
   color: #45544e;
   font-family: 'pFont', serif;
@@ -28,7 +28,7 @@ p{
     color: #45544e;
     font-family: 'appFont', sans-serif;
   }
-  p{
+  p, h4{
     font-size: 20px;
     color: #45544e;
     font-family: 'pFont', serif;
