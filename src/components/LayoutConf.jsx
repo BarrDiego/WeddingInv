@@ -1,6 +1,6 @@
 import React from 'react'
-import ConfirmacionButton from './utiles/ConfirmacionButton';
-import WhatsAppButton from './utiles/WhatsappButton';
+import ConfirmacionButton from './utiles/ConfirmacionButton.jsx';
+import WhatsAppButton from './utiles/WhatsappButton.jsx';
 
 export const LayoutConf = () => {
 

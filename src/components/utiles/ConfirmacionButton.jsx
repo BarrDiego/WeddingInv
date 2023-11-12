@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '/src/assets/styles/layouts.css'; // Asegúrate de tener un archivo CSS para los estilos del botón
 
-import ModalConfirmacion from './ModalConfirmacion';
+import ModalConfirmacion from './ModalConfirmacion.jsx';
 
 
 const ConfirmacionButton = ({buttonClass}) => {

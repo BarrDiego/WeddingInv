@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import LayoutPrl from './components/LayoutPrl'
-import WhatsAppButton from './components/utiles/WhatsappButton'
-import ConfirmacionButton from './components/utiles/ConfirmacionButton'
-import { LayoutTrn01 } from './components/LayoutTrn01'
-import { LayoutInfo } from './components/LayoutInfo'
-import { Temporizador } from './components/utiles/Temporizador'
-import { LayoutSalon } from './components/LayoutSalon'
-import { LayoutTrn02 } from './components/LayoutTrn02'
-import { LayoutConf } from './components/LayoutConf'
+import LayoutPrl from './components/LayoutPrl.jsx'
+import WhatsAppButton from './components/utiles/WhatsappButton.jsx'
+import ConfirmacionButton from './components/utiles/ConfirmacionButton.jsx'
+import { LayoutTrn01 } from './components/LayoutTrn01.jsx'
+import { LayoutInfo } from './components/LayoutInfo.jsx'
+import { Temporizador } from './components/utiles/Temporizador.jsx'
+import { LayoutSalon } from './components/LayoutSalon.jsx'
+import { LayoutTrn02 } from './components/LayoutTrn02.jsx'
+import { LayoutConf } from './components/LayoutConf.jsx'
 
 
 

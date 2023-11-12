@@ -1,5 +1,5 @@
 import React from 'react'
-import { LayoutCofre } from './LayoutCofre';
+import { LayoutCofre } from './LayoutCofre.jsx';
 
 export const LayoutTrn02 = () => {
 
