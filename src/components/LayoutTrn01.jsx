@@ -3,7 +3,7 @@ import '../assets/styles/images.css'
 import '../assets/styles/layouts.css'
 
 export const LayoutTrn01 = () => {
-  const imgPath = '/src/assets/img/transicion0101.png';
+  const imgPath = '../src/assets/img/Transicion0101.png';
   const image = (
     <img
       src={imgPath}
@@ -13,7 +13,7 @@ export const LayoutTrn01 = () => {
     />
   ) 
 
-  const imgLeaf = '/src/assets/img/InvitacionOriginaria10.png';
+  const imgLeaf = '../src/assets/img/InvitacionOriginaria10.png';
   const imageLeaf = (
     <img
       src={imgLeaf}
@@ -22,7 +22,7 @@ export const LayoutTrn01 = () => {
       height={235}
     />
   )
-  const imgEnd= '/src/assets/img/InvitacionOriginaria11.png';
+  const imgEnd= '../src/assets/img/InvitacionOriginaria11.png';
   const imageEnd = (
     <img
       src={imgEnd}
@@ -32,7 +32,7 @@ export const LayoutTrn01 = () => {
     />
   ) 
   
-  const imgEndT= '/src/assets/img/transicion02.png';
+  const imgEndT= '../src/assets/img/Transicion02.png';
   const imageEndT = (
     <img
       src={imgEndT}

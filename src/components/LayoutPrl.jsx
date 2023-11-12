@@ -6,7 +6,7 @@ import '../assets/styles/images.css'
 
 const LayoutPrl = () => {
  
-  const imgPath = '/src/assets/img/portada0101.png';
+  const imgPath = '../src/assets/img/Portada0101.png';
   const imagePortada = (
     <img
       src={imgPath}

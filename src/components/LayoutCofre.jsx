@@ -2,7 +2,7 @@ import React from 'react'
 import '../assets/styles/layouts.css'
 
 export const LayoutCofre = () => {
-    const imgStr= '/src/assets/img/InvitacionOriginaria12.png';
+    const imgStr= '../src/assets/img/InvitacionOriginaria12.png';
     const imageStr = (
         <img
             src={imgStr}
@@ -11,7 +11,7 @@ export const LayoutCofre = () => {
             height={140}
         />
   )
-  const rings= '/src/assets/img/rings1.png';
+  const rings= '../src/assets/img/Rings1.png';
   const imageRings = (
       <img
           src={rings}
@@ -20,7 +20,7 @@ export const LayoutCofre = () => {
           height={140}
       />
 )
-  const chest= '/src/assets/img/chest1.png';
+  const chest= '../src/assets/img/Chest1.png';
   const imageChest = (
       <img
           src={chest}
@@ -29,7 +29,7 @@ export const LayoutCofre = () => {
           height={140}
       />
 )
-  const imgEn= '/src/assets/img/InvitacionOriginaria13Rot.png';
+  const imgEn= '../src/assets/img/InvitacionOriginaria13Rot.png';
     const imageEn = (
         <img
             src={imgEn}
