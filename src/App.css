@@ -1,4 +1,4 @@
-/* #root {
+#root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -63,14 +63,11 @@ p{
   }
 }
 
-body {
-  background-color: rgba(192, 192, 192, 0.5); /* Fondo gris semi-transparente para el cuerpo *//*
-}
-/*
+
 .style-gral{
   border: 1px rgba(128,128,128,0.5);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Efecto de sombreado */
-  /*background-color: white; /* RGBA(Grises, Opacidad) *//*
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Efecto de sombreado */
+  background-color: white; /* RGBA(Grises, Opacidad) */
   border-radius: 5px;
 }
 
@@ -80,7 +77,8 @@ body {
 
 .read-the-docs {
   color: #888;
-} */
+} 
+/*
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -103,7 +101,7 @@ h1, h2, h3, label{
   font-family: 'appFont', sans-serif;
 }
 
-p{
+p, h4{
   font-size: 20px;
   color: #45544e;
   font-family: 'pFont', serif;
@@ -115,7 +113,7 @@ p{
     font-family: 'appFont', sans-serif;
   }
 
-  p{
+  p, h4{
     font-size: 20px;
     color: #45544e;
     font-family: 'pFont', serif;
@@ -172,6 +170,7 @@ body {
 }
 
 /* Media queries para pantallas de diferentes tamaños */
+/*
 @media only screen and (max-width: 600px) {
   #root {
     margin: 0 auto;
@@ -223,4 +222,4 @@ body {
     padding: 1.5em;
   }
 }
-
+*/
