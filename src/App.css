@@ -78,12 +78,13 @@ p, h4{
   color: #888;
 } 
 /*pantallas pequeñas*/
-@media screen and (min-width: 300px) and (max-width: 768px) {
+@media screen and (min-width: 300px) and (max-width: 600px) {
   #root {
     padding: 2rem;
     text-align: center;
     max-width: auto;
-    margin:auto;
+    width: auto;
+    margin: auto;
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -92,8 +93,33 @@ p, h4{
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     background-color: white;
     max-width: auto;
+    width: auto;
+    width: auto;
     border-radius: 5px;
     display: grid;    
+  }
+
+  h1, h2, h3, label{
+    color: #45544e;
+    font-family: 'appFont', sans-serif;
+    font-size: 24px;
+  }
+  p, h4{
+    font-size: 20px;
+    color: #45544e;
+    font-family: 'pFont', serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    h1, h2, h3, label {
+      color: #45544e;
+      font-family: 'appFont', sans-serif;
+      font-size: 24px;
+    }
+    p, h4{
+      font-size: 20px;
+      color: #45544e;
+      font-family: 'pFont', serif;
+    }
   }
  
 
@@ -107,12 +133,13 @@ p, h4{
   }
 }
 /*pantallas medianas*/
-@media screen and (min-width:768px){
+@media screen and (min-width:600px) and (max-width:768px){
   #root {    
     padding: 2rem;
     text-align: center;
     max-width: auto;
-    margin:auto;
+    width: auto;
+    margin: auto;
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -120,6 +147,7 @@ p, h4{
     border: 1px rgba(128,128,128,0.5);
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     background-color: white;
+    width: auto;
     max-width: auto;
     border-radius: 5px;
     display: grid;
@@ -136,12 +164,13 @@ p, h4{
 }
 
 /*pantallas grandes*/
-@media screen and (min-width: 992px){
+@media screen and (min-width: 768px) and (max-width:992px){
   #root {    
     padding: 2rem;
     text-align: center;
     max-width: auto;
-    margin:auto;
+    width: auto;
+    margin: auto;
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -149,6 +178,7 @@ p, h4{
     border: 1px rgba(128,128,128,0.5);
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     background-color: white;
+    width: auto;
     max-width: auto;
     border-radius: 5px;
     display: grid;
@@ -164,7 +194,7 @@ p, h4{
   }
 }
 /*pantallas extra grandes*/
-@media screen and (min-width:1400px) {
+@media screen and (min-width: 992px) {
   #root {    
     margin: 0 auto;
     padding: 2rem;
