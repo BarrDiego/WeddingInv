@@ -47,11 +47,12 @@ const ModalConfirmacion = ({ isOpen, onClose, onConfirm, selectedOption, onOptio
     // Llama a la función de redirección a WhatsApp
     sendToWhatsapp(tipoInvitado, menuEspecial, (telefono, text) =>{
       
-      const mensaje = telefono + "&text=" + text;
+      const mensaje = telefono + "?text=" + text;
       console.log(mensaje)
       if (isMobile()) {
         window.open("https://wa.me/" + mensaje, "_blank");
       } else {
+        const mensaje = telefono + "&text=" + text;
         window.open("https://web.whatsapp.com/send?phone=" + mensaje, "_blank");
       }
     });

@@ -17,11 +17,12 @@ const WhatsAppButton = ({imageSource , buttonClass }) => {
     setButtonDisabled(true);
     setTimeout(() => {
       const nroTelefono = "2215408262";
-      const mensaje = nroTelefono + "&text=Hola! necesito ayuda con la confirmacion de la boda!!";
+      const mensaje = nroTelefono + "?text=Hola! necesito ayuda con la confirmacion de la boda!!";
 
       if (isMobile()) {
         window.open("https://wa.me/" + mensaje, "_blank");
       } else {
+        const mensaje = nroTelefono + "&text=Hola! necesito ayuda con la confirmacion de la boda!!";
         window.open("https://web.whatsapp.com/send?phone=" + mensaje, "_blank");
       }
       
