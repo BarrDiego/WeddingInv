@@ -32,7 +32,7 @@ export const LayoutTrn01 = () => {
     />
   ) 
   
-  const imgEndT= '/public/img/Transicion02.png';
+  const imgEndT= '/dist/img/Transicion02.png';
   const imageEndT = (
     <img
       src={imgEndT}

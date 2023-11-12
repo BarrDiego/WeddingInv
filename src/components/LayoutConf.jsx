@@ -4,7 +4,7 @@ import WhatsAppButton from './utiles/WhatsappButton.jsx';
 
 export const LayoutConf = () => {
 
-    const imgFinal= '/public/img/TransicionFinal02.png';
+    const imgFinal= '/dist/img/TransicionFinal02.png';
     const imageFinal = (
         <img
             src={imgFinal}
@@ -26,7 +26,7 @@ export const LayoutConf = () => {
         </div>        
         <h2>Cualquier duda que tengas consultanos</h2>
         <div className='buttonWa'>
-            <WhatsAppButton buttonClass={'confirmacionWa'} imageSource={'/public/img/Walogo3.png'}/>
+            <WhatsAppButton buttonClass={'confirmacionWa'} imageSource={'/dist/img/Walogo3.png'}/>
         </div>        
         <h1>Te esperamos!</h1>
         <div className='finalTransi'>
