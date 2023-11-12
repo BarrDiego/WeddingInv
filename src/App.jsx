@@ -5,7 +5,7 @@ import WhatsAppButton from './components/utiles/WhatsappButton.jsx'
 import ConfirmacionButton from './components/utiles/ConfirmacionButton.jsx'
 import { LayoutTrn01 } from './components/LayoutTrn01.jsx'
 import { LayoutInfo } from './components/LayoutInfo.jsx'
-import Temporizador  from '../src/components/utiles/Temporizador.jsx'
+import TemporizadorStick  from './components/utiles/TemporizadorStick.jsx'
 import { LayoutSalon } from './components/LayoutSalon.jsx'
 import { LayoutTrn02 } from './components/LayoutTrn02.jsx'
 import { LayoutConf } from './components/LayoutConf.jsx'
@@ -49,7 +49,7 @@ function App() {
       
       <div className='style-gral'>
         <div className='temporizador-container' >               
-          <Temporizador/>
+          <TemporizadorStick/>
         </div> 
         <div className='divPrl'>
           <LayoutPrl/>
