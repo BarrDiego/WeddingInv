@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 
-export const Temporizador = () => {
+const Temporizador = () => {
     const [days, setDays] = useState(0);
     const [hours, setHours] = useState(0);  
     const [minutes, setMinutes] = useState(0);
@@ -31,4 +31,4 @@ export const Temporizador = () => {
 }
 
 
-
+export default Temporizador;
