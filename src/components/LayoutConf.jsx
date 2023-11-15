@@ -5,12 +5,14 @@ import WhatsAppButton from './utiles/WhatsappButton.jsx';
 export const LayoutConf = () => {
 
     const imgFinal= '/img/TransicionFinal02.png';
+    const isPortrait = window.matchMedia('(orientation: portrait)').matches;  
+    const ancho = isPortrait ? window.innerWidth : 1280; 
     const imageFinal = (
         <img
             src={imgFinal}
             alt='transicionEn'
-            width={1280}
-            height={375}
+            width={ancho}
+            height={ancho*0.292}
         />
   )
   return (

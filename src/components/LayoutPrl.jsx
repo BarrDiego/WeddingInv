@@ -7,12 +7,15 @@ import '../assets/styles/images.css'
 const LayoutPrl = () => {
  
   const imgPath = '/img/Portada0101.png';
+  const isPortrait = window.matchMedia('(orientation: portrait)').matches;
+  const ancho = isPortrait ? window.innerWidth : 1280;    
+  
   const imagePortada = (
     <img
       src={imgPath}
       alt='imagenPrl'
-      width={1280}
-      height={1480}
+      width={ancho}
+      height={ancho * 1.156}
     />
   )
     

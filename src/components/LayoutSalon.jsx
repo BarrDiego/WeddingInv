@@ -22,7 +22,8 @@ export const LayoutSalon = () => {
             height={140}
         />
   )  
-
+  const isPortrait = window.matchMedia('(orientation: portrait)').matches;
+  const ancho = isPortrait ? 200 :300;  
     return (
         <>
         <div className='layoutSalon'>
@@ -32,24 +33,24 @@ export const LayoutSalon = () => {
                     <img
                         src={imgPortal01}
                         alt='portal01'
-                        width={300}
-                        height={300}
+                        width={ancho}
+                        height={ancho}
                     />
                 </div>
                 <div onClick={() => handleImageClick(imgPortal02)}>
                     <img
                         src={imgPortal02}
                         alt='portal02'
-                        width={300}
-                        height={300}
+                        width={ancho}
+                        height={ancho}
                     />
                 </div>
                 <div onClick={() => handleImageClick(imgPortal03)}>
                     <img
                         src={imgPortal03}
                         alt='portal03'
-                        width={300}
-                        height={300}
+                        width={ancho}
+                        height={ancho}
                     />
                 </div>
             </div>

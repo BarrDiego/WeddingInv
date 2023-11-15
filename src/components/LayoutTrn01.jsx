@@ -3,13 +3,17 @@ import '../assets/styles/images.css'
 import '../assets/styles/layouts.css'
 
 export const LayoutTrn01 = () => {
+  const isPortrait = window.matchMedia('(orientation: portrait)').matches;
+  
+  const ancho = isPortrait ? window.innerWidth : 1280;    
+  
   const imgPath = '/img/Transicion0101.png';
   const image = (
     <img
       src={imgPath}
       alt='transicionUno'
-      width={1280}
-      height={375}
+      width={ancho}
+      height={ancho*0.292}
     />
   ) 
 
@@ -37,8 +41,8 @@ export const LayoutTrn01 = () => {
     <img
       src={imgEndT}
       alt='transicionEndT'
-      width={1280}
-      height={100}
+      width={ancho}
+      height={ancho * 0.078}
     />
   ) 
 
