@@ -460,4 +460,7 @@
       height: 50vw !important;
       border: none;
     }
+    .modalExito{
+      width: 100% !important;
+    }
     }

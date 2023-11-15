@@ -67,7 +67,7 @@ const ModalConfirmacion = ({ isOpen, onClose, onConfirm, selectedOption, onOptio
           <div className="modal">
 
             {mostarExito ? (
-          <div>
+          <div className='modalExito'>
             <h2>Redirigido con exito</h2>
             <button onClick={() => {setMostrarExito(false); onClose()}}>Continuar</button>
           </div>
