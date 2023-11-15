@@ -407,4 +407,7 @@
     .modal-buttons{
       width: 100% !important;
     }
+    .whatsapp-button{
+      z-index: 0;
+    }
     }

@@ -75,7 +75,7 @@ const ModalConfirmacion = ({ isOpen, onClose, onConfirm, selectedOption, onOptio
           <>         
           <h2>Confirmar Asistencia</h2>
             <p>Selecciona si eres invitado del novio o la novia:</p>
-            <select value={selectedOption} onChange={onOptionChange}>
+            <select value={selectedOption} style={{width:'100%'}} onChange={onOptionChange}>
               <option value="">Seleccionar</option>
               <option value="novio">Invitado del Novio</option>
               <option value="novia">Invitado de la Novia</option>
