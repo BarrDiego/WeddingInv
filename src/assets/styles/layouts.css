@@ -370,6 +370,88 @@
       font-family: 'appFont', sans-serif;
       width: 98vw !important;
     }
+
+    /* WhatsAppButton.css */
+.whatsapp-button {
+  position: fixed;
+  right: 20px;
+  bottom: 90%; /* Centra verticalmente */
+  transform: translateY(50%); /* Ajusta la posición vertical */
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+/* ConfirmacionButton.css */
+.confirmacion-button {
+  background-color: #45544e;
+  color: #dae7e0;
+  position: fixed;
+  right: 40px;
+  bottom: 88%; /* Centra verticalmente */
+  transform: translateY(70%); /* Ajusta la posición vertical */
+  width: 20vw;
+  height: 10vw;
+  cursor: pointer;
+  z-index: 2;
+  border: 1px solid black;
+  font-family: 'modalFont', sans-serif;
+  font-size: 1.5rem;
+}
+/* ModalConfirmacion.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo gris semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  width: 130vw !important; /* Ajusta según tu diseño */
+  height: 45vw;
+}
+
+/* ... Otros estilos */
+.modal h2 {
+  margin-top: 0;
+  font-family: 'appFont', sans-serif;
+  font-size: 2rem;
+}
+
+.modal p, label {
+  margin-bottom: 20px;
+  font-family: 'appFont', sans-serif;
+  font-size: 1.7rem;
+}
+
+.modal select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'modalFont', sans-serif;
+  font-size: 1.5rem;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 5%;
+  font-family: 'modalFont', sans-serif;
+  font-size: 1.5rem;
+}
  
     .layoutSalon{
       display: grid;
@@ -429,7 +511,9 @@
       z-index: 0;
     }
     .submitWhat{
-      margin-left: 80%;
+      margin-left: 86%;
+      width: 90px;
+      height: 90px;
     }
     .layoutInfo{
       display: grid;
