@@ -4,22 +4,24 @@ import "../assets/styles/layouts.css"
 
 export const LayoutInfo = () => {
   const imgUp = '/img/InvitacionOriginaria04.png';
+  const isPortrait = window.matchMedia('(orientation: portrait)').matches;
+  const ancho = isPortrait ? 500 : 250;
   const imageUp = (
     <img
       src={imgUp}
       alt='transicionUno'
-      width={500}
-      height={400}
+      width={ancho}
+      height={ancho}
     />
   )
 
   return (
     <div className='layoutInfo'>
-        <div>
-            <div>
+        <div className='contenedorInfo'>
+            <div className='imgInfo'>
                 {imageUp}
             </div>
-            <div>                
+            <div className='ceremoniaLbl'>                
                 <h1>Ceremonia:</h1>          
                 <h2>El Portal, Salon de Eventos</h2>
                 <h4>
@@ -28,6 +30,7 @@ export const LayoutInfo = () => {
                 </h4>
                 <h4>Villa Elisa, La Plata, Buenos Aires</h4>             
             </div>
+            
         </div>
         <div className='map'>            
         <iframe
