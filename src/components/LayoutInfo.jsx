@@ -43,7 +43,7 @@ export const LayoutInfo = () => {
         <div className='contMap'>
           <h2>Visualiza el mapa completo:</h2>
           <button className='buttonMaps' onClick={()=>{
-            window.open('https://www.google.com/maps/contrib/116565561034068290186/photos/@-34.8537417,-58.0962129,17z', 'Maps', 'windowFeatures="location=yes"');
+            window.open('https://www.google.com.ar/maps/place/El+Portal+Salon+De+Eventos/@-34.855605,-58.0879544,16z/data=!4m6!3m5!1s0x95a2ded515d750bb:0x475086e5c675aa27!8m2!3d-34.8537417!4d-58.0962129!16s%2Fg%2F11ggmd7t0_?entry=ttu', 'Maps', 'windowFeatures="location=yes"');
           }}>
             Ir a Maps
             
