@@ -43,7 +43,7 @@ export const LayoutInfo = () => {
         <div className='contMap'>
           <h2>Visualiza el mapa completo:</h2>
           <button className='buttonMaps' onClick={()=>{
-            window.open('https://maps.app.goo.gl/4aR7LEoPYDvDLsNG6', 'Maps', 'windowFeatures="location=yes"');
+            window.open('https://www.google.com/maps/contrib/116565561034068290186/photos/@-34.8537417,-58.0962129,17z', 'Maps', 'windowFeatures="location=yes"');
           }}>
             Ir a Maps
             
