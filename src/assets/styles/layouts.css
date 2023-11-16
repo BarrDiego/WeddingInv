@@ -183,6 +183,10 @@
     max-width: 300px; /* Cambia esto según tus necesidades */
     margin: 0 auto; /* Centra el elemento horizontalmente */
   }
+  .ceremoniaLbl{
+    margin-left: 8%;
+    margin-top: 20%;
+  }
   
   .map {
     flex: 1; /* Hace que el div del mapa ocupe todo el espacio restante */
@@ -196,6 +200,19 @@
     width: 100%;
     height: 400px;
     border: none;
+  }
+  .contMap{
+    text-align: center;
+  }
+  .buttonMaps{
+    background-color: #45544e;
+    color: #dae7e0;
+    width: 10vw;
+    height: 4vw;
+    cursor: pointer;
+    border: 1px solid black;
+    font-family: 'modalFont', sans-serif;
+    font-size: 20px;
   }
 
   /*... Layout SALON*/  
@@ -375,7 +392,7 @@
 .whatsapp-button {
   position: fixed;
   right: 20px;
-  bottom: 90%; /* Centra verticalmente */
+  bottom: 88%; /* Centra verticalmente */
   transform: translateY(50%); /* Ajusta la posición vertical */
   width: 100px;
   height: 100px;
@@ -390,7 +407,7 @@
   color: #dae7e0;
   position: fixed;
   right: 40px;
-  bottom: 88%; /* Centra verticalmente */
+  bottom: 85%; /* Centra verticalmente */
   transform: translateY(70%); /* Ajusta la posición vertical */
   width: 20vw;
   height: 10vw;
@@ -455,12 +472,20 @@
  
     .layoutSalon{
       display: grid;
-
-
       margin-top: 20px;
       margin-left: 130px;
       text-align: left;
       width: 80% !important;
+    }
+    .buttonMaps{
+      background-color: #45544e;
+      color: #dae7e0;
+      width: 20vw;
+      height: 10vw;
+      cursor: pointer;
+      border: 1px solid black;
+      font-family: 'modalFont', sans-serif;
+      font-size: 1.5rem;
     }
   
     .imagenesPortal{

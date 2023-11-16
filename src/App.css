@@ -226,5 +226,28 @@ p, h4{
   #root div {
     width: 100vw;
   }
+  h1, h2, h3, label{
+    color: #45544e;
+    font-family: 'appFont', sans-serif;
+    font-size: 2rem !important;
+  }
+  p, h4{
+    font-size: 1.7rem !important;
+    color: #45544e;
+    font-family: 'pFont', serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    h1, h2, h3, label {
+      color: #45544e;
+      font-family: 'appFont', sans-serif;
+      font-size: 2rem !important;
+    }
+    p, h4{
+      font-size: 20px;
+      color: #45544e;
+      font-family: 'pFont', serif;
+      font-size: 1.7rem !important;
+    }
+  }
   
   }
